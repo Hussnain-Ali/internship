@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="tree.jpg" alt="tree" style="width: 400px;height:400px">
+        <h4>Ping Pong Score Keeper</h4>
+        <hr style="opacity: .5">
+        <h1><span id="displayp1">0</span> to <span id="displayp2">0</span></h1>
+        <h1 id="score"></h1>
+        <h3>use the buttons below to keep score</h3>
+        <h3 style="display: flex;display: inline">playing to:</h3>
+        <select name="selectplr" id="player">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+
+        <div style="margin-top: 20px">
+            <button class="btn1" id="btn1" style="background-color:#45d49b">+1 player one</button>
+            <button class="btn2" id="btn2" style="background-color:#4579d4">+1 Player two</button>
+            <button class="btn3" id="btn3" style="background-color:#d44545"> Reset</button>
+        </div>
+
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>

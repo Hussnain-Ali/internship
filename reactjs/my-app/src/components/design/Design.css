@@ -1,0 +1,17 @@
+.main {
+    width: 100%;
+    height: 80vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.div1 {
+
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100px;
+    background-color: aqua;
+    height: 30px;
+}

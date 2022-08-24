@@ -1,0 +1,23 @@
+
+
+.main{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    height: 200px;
+}
+.sidebar{
+    flex-grow:1;
+    flex-shrink: 3;
+    text-align: center;
+} 
+.main-content{
+    flex-grow: 3;
+    flex-shrink: 1;
+}
+@media (max-width:500px) and (min-width:300px) {
+    .main{
+        background-color: black;
+    }
+    
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+    <h1 class="backgror">Table For Persons</h1>
+    <table>
+        <tr>
+            <th>Identity</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th> Gender</th>
+            <th>Class</th>
+        </tr>
+        <% for (let c of comments) {%>
+            <tr>
+                <td>
+                    <%= c.id%>
+                </td>
+                <td>
+                    <%= c.name%>
+                </td>
+                <td>
+                    <%= c.age%>
+                </td>
+                <td>
+                    <%= c.gender%>
+                </td>
+                <td>
+                    <%= c.classx%>
+                </td>
+                <td><button><a href="singlePersonInfo/<%=c.id  %> "><b>SEE DETAIL</b></a></button></td>
+            </tr>
+            <% } %>
+    </table>
+
+    <button><a href="/addNewUser">Add new User</a></button>
+</body>
+
+</html>
